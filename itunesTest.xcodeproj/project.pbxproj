@@ -1,0 +1,974 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8427C4B128A80B7F00DD3A29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C4B028A80B7F00DD3A29 /* AppDelegate.swift */; };
+		8427C4B328A80B7F00DD3A29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C4B228A80B7F00DD3A29 /* SceneDelegate.swift */; };
+		8427C4B528A80B7F00DD3A29 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C4B428A80B7F00DD3A29 /* AuthViewController.swift */; };
+		8427C4B828A80B7F00DD3A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8427C4B628A80B7F00DD3A29 /* Main.storyboard */; };
+		8427C4BA28A80B8000DD3A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8427C4B928A80B8000DD3A29 /* Assets.xcassets */; };
+		8427C4BD28A80B8000DD3A29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8427C4BB28A80B8000DD3A29 /* LaunchScreen.storyboard */; };
+		8427C4C728A80CDD00DD3A29 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C4C628A80CDD00DD3A29 /* RegistrationViewController.swift */; };
+		8427C4C928A80CE700DD3A29 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C4C828A80CE700DD3A29 /* AlbumViewController.swift */; };
+		8427C4CB28A80CF200DD3A29 /* DetailAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C4CA28A80CF200DD3A29 /* DetailAlbumViewController.swift */; };
+		8427C4CD28A80CF800DD3A29 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C4CC28A80CF800DD3A29 /* UserInfoViewController.swift */; };
+		8427C4D128A8152200DD3A29 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C4D028A8152200DD3A29 /* StringExtension.swift */; };
+		8427C4D328A9145400DD3A29 /* UserDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C4D228A9145400DD3A29 /* UserDataStorage.swift */; };
+		8427C4D528A9151100DD3A29 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C4D428A9151100DD3A29 /* UserModel.swift */; };
+		8466C39028AD24DF008F94F2 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C38F28AD24DF008F94F2 /* AlbumModel.swift */; };
+		8466C3F228AD2CB5008F94F2 /* itunesTest.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 8466C39228AD2CB5008F94F2 /* itunesTest.xcworkspace */; };
+		8466C3F328AD2CB5008F94F2 /* Pods-itunesTest-frameworks.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8466C39928AD2CB5008F94F2 /* Pods-itunesTest-frameworks.sh */; };
+		8466C3F428AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Release-output-files.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 8466C39A28AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Release-output-files.xcfilelist */; };
+		8466C3F528AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Debug-input-files.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 8466C39B28AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Debug-input-files.xcfilelist */; };
+		8466C3F628AD2CB5008F94F2 /* Pods-itunesTest-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8466C39C28AD2CB5008F94F2 /* Pods-itunesTest-Info.plist */; };
+		8466C3F728AD2CB5008F94F2 /* Pods-itunesTest.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8466C39E28AD2CB5008F94F2 /* Pods-itunesTest.release.xcconfig */; };
+		8466C3F828AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Debug-output-files.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 8466C39F28AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Debug-output-files.xcfilelist */; };
+		8466C3F928AD2CB5008F94F2 /* Pods-itunesTest.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3A128AD2CB5008F94F2 /* Pods-itunesTest.debug.xcconfig */; };
+		8466C3FA28AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Release-input-files.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3A228AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Release-input-files.xcfilelist */; };
+		8466C3FB28AD2CB5008F94F2 /* Pods-itunesTest-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3A328AD2CB5008F94F2 /* Pods-itunesTest-acknowledgements.plist */; };
+		8466C3FC28AD2CB5008F94F2 /* Pods-itunesTest-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3A428AD2CB5008F94F2 /* Pods-itunesTest-acknowledgements.markdown */; };
+		8466C3FD28AD2CB5008F94F2 /* Pods-itunesTest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3A528AD2CB5008F94F2 /* Pods-itunesTest-dummy.m */; };
+		8466C3FE28AD2CB5008F94F2 /* IQKeyboardManagerSwift-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3A728AD2CB5008F94F2 /* IQKeyboardManagerSwift-Info.plist */; };
+		8466C3FF28AD2CB5008F94F2 /* IQKeyboardManagerSwift.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3A828AD2CB5008F94F2 /* IQKeyboardManagerSwift.debug.xcconfig */; };
+		8466C40028AD2CB5008F94F2 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3AB28AD2CB5008F94F2 /* IQKeyboardManagerSwift-dummy.m */; };
+		8466C40128AD2CB5008F94F2 /* IQKeyboardManagerSwift.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3AD28AD2CB5008F94F2 /* IQKeyboardManagerSwift.release.xcconfig */; };
+		8466C40228AD2CB5008F94F2 /* Manifest.lock in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3AE28AD2CB5008F94F2 /* Manifest.lock */; };
+		8466C40328AD2CB5008F94F2 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3B228AD2CB5008F94F2 /* LICENSE.md */; };
+		8466C40428AD2CB5008F94F2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3B328AD2CB5008F94F2 /* README.md */; };
+		8466C40528AD2CB5008F94F2 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3B728AD2CB5008F94F2 /* IQTextView.swift */; };
+		8466C40628AD2CB5008F94F2 /* IQKeyboardManager+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3B828AD2CB5008F94F2 /* IQKeyboardManager+Internal.swift */; };
+		8466C40728AD2CB5008F94F2 /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3BA28AD2CB5008F94F2 /* IQPreviousNextView.swift */; };
+		8466C40828AD2CB5008F94F2 /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3BB28AD2CB5008F94F2 /* IQTitleBarButtonItem.swift */; };
+		8466C40928AD2CB5008F94F2 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3BC28AD2CB5008F94F2 /* IQBarButtonItem.swift */; };
+		8466C40A28AD2CB5008F94F2 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3BD28AD2CB5008F94F2 /* IQToolbar.swift */; };
+		8466C40B28AD2CB5008F94F2 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3BE28AD2CB5008F94F2 /* IQUIView+IQKeyboardToolbar.swift */; };
+		8466C40C28AD2CB5008F94F2 /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3BF28AD2CB5008F94F2 /* IQInvocation.swift */; };
+		8466C40D28AD2CB5008F94F2 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3C028AD2CB5008F94F2 /* IQKeyboardManager+UIKeyboardNotification.swift */; };
+		8466C40E28AD2CB5008F94F2 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3C228AD2CB5008F94F2 /* IQKeyboardManagerConstantsInternal.swift */; };
+		8466C40F28AD2CB5008F94F2 /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3C328AD2CB5008F94F2 /* IQKeyboardManagerConstants.swift */; };
+		8466C41028AD2CB5008F94F2 /* IQKeyboardManager+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3C428AD2CB5008F94F2 /* IQKeyboardManager+Position.swift */; };
+		8466C41128AD2CB5008F94F2 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3C528AD2CB5008F94F2 /* IQKeyboardReturnKeyHandler.swift */; };
+		8466C41228AD2CB5008F94F2 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3C628AD2CB5008F94F2 /* IQKeyboardManager.swift */; };
+		8466C41328AD2CB5008F94F2 /* IQKeyboardManager+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3C728AD2CB5008F94F2 /* IQKeyboardManager+Debug.swift */; };
+		8466C41428AD2CB5008F94F2 /* IQKeyboardManager+OrientationNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3C828AD2CB5008F94F2 /* IQKeyboardManager+OrientationNotification.swift */; };
+		8466C41528AD2CB5008F94F2 /* IQKeyboardManager+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3C928AD2CB5008F94F2 /* IQKeyboardManager+Toolbar.swift */; };
+		8466C41628AD2CB5008F94F2 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3CB28AD2CB5008F94F2 /* IQUIScrollView+Additions.swift */; };
+		8466C41728AD2CB5008F94F2 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3CC28AD2CB5008F94F2 /* IQUIViewController+Additions.swift */; };
+		8466C41828AD2CB5008F94F2 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3CD28AD2CB5008F94F2 /* IQUITextFieldView+Additions.swift */; };
+		8466C41928AD2CB5008F94F2 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3CE28AD2CB5008F94F2 /* IQUIView+Hierarchy.swift */; };
+		8466C41A28AD2CB5008F94F2 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3CF28AD2CB5008F94F2 /* IQNSArray+Sort.swift */; };
+		8466C41B28AD2CB5008F94F2 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3D028AD2CB5008F94F2 /* IQKeyboardManager+UITextFieldViewNotification.swift */; };
+		8466C41C28AD2CB5008F94F2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3D128AD2CB5008F94F2 /* Podfile */; };
+		8466C41D28AD2CB5008F94F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3D628AD2CB5008F94F2 /* Assets.xcassets */; };
+		8466C41E28AD2CB5008F94F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3D728AD2CB5008F94F2 /* LaunchScreen.storyboard */; };
+		8466C41F28AD2CB5008F94F2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3DA28AD2CB5008F94F2 /* StringExtension.swift */; };
+		8466C42028AD2CB5008F94F2 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3DC28AD2CB5008F94F2 /* AlbumModel.swift */; };
+		8466C42128AD2CB5008F94F2 /* UserDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3DD28AD2CB5008F94F2 /* UserDataStorage.swift */; };
+		8466C42228AD2CB5008F94F2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3DE28AD2CB5008F94F2 /* UserModel.swift */; };
+		8466C42328AD2CB5008F94F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3E028AD2CB5008F94F2 /* Main.storyboard */; };
+		8466C42428AD2CB5008F94F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3E228AD2CB5008F94F2 /* AppDelegate.swift */; };
+		8466C42528AD2CB5008F94F2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3E428AD2CB5008F94F2 /* AuthViewController.swift */; };
+		8466C42628AD2CB5008F94F2 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3E528AD2CB5008F94F2 /* UserInfoViewController.swift */; };
+		8466C42728AD2CB5008F94F2 /* DetailAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3E628AD2CB5008F94F2 /* DetailAlbumViewController.swift */; };
+		8466C42828AD2CB5008F94F2 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3E728AD2CB5008F94F2 /* AlbumViewController.swift */; };
+		8466C42928AD2CB5008F94F2 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3E828AD2CB5008F94F2 /* RegistrationViewController.swift */; };
+		8466C42A28AD2CB5008F94F2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3E928AD2CB5008F94F2 /* Info.plist */; };
+		8466C42B28AD2CB5008F94F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3EA28AD2CB5008F94F2 /* SceneDelegate.swift */; };
+		8466C42C28AD2CB5008F94F2 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3EB28AD2CB5008F94F2 /* Podfile.lock */; };
+		CCF84C4AE702BA8DCAD45BC8 /* Pods_itunesTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0A16B1D92C32F76E859BC5 /* Pods_itunesTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8466C3EE28AD2CB5008F94F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8466C39428AD2CB5008F94F2 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A8E950A16D00F649C54FFB30F81D7842;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		8466C3F028AD2CB5008F94F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8466C39428AD2CB5008F94F2 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A98F403B5FA81391A79F98575E8CE58;
+			remoteInfo = "Pods-itunesTest";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D0A16B1D92C32F76E859BC5 /* Pods_itunesTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_itunesTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8427C4AD28A80B7F00DD3A29 /* itunesTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = itunesTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8427C4B028A80B7F00DD3A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8427C4B228A80B7F00DD3A29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8427C4B428A80B7F00DD3A29 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		8427C4B728A80B7F00DD3A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8427C4B928A80B8000DD3A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8427C4BC28A80B8000DD3A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8427C4BE28A80B8000DD3A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8427C4C628A80CDD00DD3A29 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		8427C4C828A80CE700DD3A29 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		8427C4CA28A80CF200DD3A29 /* DetailAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAlbumViewController.swift; sourceTree = "<group>"; };
+		8427C4CC28A80CF800DD3A29 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		8427C4D028A8152200DD3A29 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		8427C4D228A9145400DD3A29 /* UserDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataStorage.swift; sourceTree = "<group>"; };
+		8427C4D428A9151100DD3A29 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8466C38F28AD24DF008F94F2 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		8466C39228AD2CB5008F94F2 /* itunesTest.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = itunesTest.xcworkspace; sourceTree = "<group>"; };
+		8466C39428AD2CB5008F94F2 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
+		8466C39928AD2CB5008F94F2 /* Pods-itunesTest-frameworks.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "Pods-itunesTest-frameworks.sh"; sourceTree = "<group>"; };
+		8466C39A28AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Release-output-files.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = "Pods-itunesTest-frameworks-Release-output-files.xcfilelist"; sourceTree = "<group>"; };
+		8466C39B28AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Debug-input-files.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = "Pods-itunesTest-frameworks-Debug-input-files.xcfilelist"; sourceTree = "<group>"; };
+		8466C39C28AD2CB5008F94F2 /* Pods-itunesTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pods-itunesTest-Info.plist"; sourceTree = "<group>"; };
+		8466C39D28AD2CB5008F94F2 /* Pods-itunesTest.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = "Pods-itunesTest.modulemap"; sourceTree = "<group>"; };
+		8466C39E28AD2CB5008F94F2 /* Pods-itunesTest.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-itunesTest.release.xcconfig"; sourceTree = "<group>"; };
+		8466C39F28AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Debug-output-files.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = "Pods-itunesTest-frameworks-Debug-output-files.xcfilelist"; sourceTree = "<group>"; };
+		8466C3A028AD2CB5008F94F2 /* Pods-itunesTest-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pods-itunesTest-umbrella.h"; sourceTree = "<group>"; };
+		8466C3A128AD2CB5008F94F2 /* Pods-itunesTest.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-itunesTest.debug.xcconfig"; sourceTree = "<group>"; };
+		8466C3A228AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Release-input-files.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = "Pods-itunesTest-frameworks-Release-input-files.xcfilelist"; sourceTree = "<group>"; };
+		8466C3A328AD2CB5008F94F2 /* Pods-itunesTest-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pods-itunesTest-acknowledgements.plist"; sourceTree = "<group>"; };
+		8466C3A428AD2CB5008F94F2 /* Pods-itunesTest-acknowledgements.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Pods-itunesTest-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8466C3A528AD2CB5008F94F2 /* Pods-itunesTest-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pods-itunesTest-dummy.m"; sourceTree = "<group>"; };
+		8466C3A728AD2CB5008F94F2 /* IQKeyboardManagerSwift-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IQKeyboardManagerSwift-Info.plist"; sourceTree = "<group>"; };
+		8466C3A828AD2CB5008F94F2 /* IQKeyboardManagerSwift.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.debug.xcconfig; sourceTree = "<group>"; };
+		8466C3A928AD2CB5008F94F2 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		8466C3AA28AD2CB5008F94F2 /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		8466C3AB28AD2CB5008F94F2 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		8466C3AC28AD2CB5008F94F2 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		8466C3AD28AD2CB5008F94F2 /* IQKeyboardManagerSwift.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.release.xcconfig; sourceTree = "<group>"; };
+		8466C3AE28AD2CB5008F94F2 /* Manifest.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
+		8466C3B228AD2CB5008F94F2 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		8466C3B328AD2CB5008F94F2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8466C3B728AD2CB5008F94F2 /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		8466C3B828AD2CB5008F94F2 /* IQKeyboardManager+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Internal.swift"; sourceTree = "<group>"; };
+		8466C3BA28AD2CB5008F94F2 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		8466C3BB28AD2CB5008F94F2 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		8466C3BC28AD2CB5008F94F2 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		8466C3BD28AD2CB5008F94F2 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		8466C3BE28AD2CB5008F94F2 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		8466C3BF28AD2CB5008F94F2 /* IQInvocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQInvocation.swift; sourceTree = "<group>"; };
+		8466C3C028AD2CB5008F94F2 /* IQKeyboardManager+UIKeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+UIKeyboardNotification.swift"; sourceTree = "<group>"; };
+		8466C3C228AD2CB5008F94F2 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		8466C3C328AD2CB5008F94F2 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		8466C3C428AD2CB5008F94F2 /* IQKeyboardManager+Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Position.swift"; sourceTree = "<group>"; };
+		8466C3C528AD2CB5008F94F2 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		8466C3C628AD2CB5008F94F2 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		8466C3C728AD2CB5008F94F2 /* IQKeyboardManager+Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Debug.swift"; sourceTree = "<group>"; };
+		8466C3C828AD2CB5008F94F2 /* IQKeyboardManager+OrientationNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+OrientationNotification.swift"; sourceTree = "<group>"; };
+		8466C3C928AD2CB5008F94F2 /* IQKeyboardManager+Toolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+Toolbar.swift"; sourceTree = "<group>"; };
+		8466C3CB28AD2CB5008F94F2 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		8466C3CC28AD2CB5008F94F2 /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		8466C3CD28AD2CB5008F94F2 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		8466C3CE28AD2CB5008F94F2 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		8466C3CF28AD2CB5008F94F2 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		8466C3D028AD2CB5008F94F2 /* IQKeyboardManager+UITextFieldViewNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+UITextFieldViewNotification.swift"; sourceTree = "<group>"; };
+		8466C3D128AD2CB5008F94F2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		8466C3D228AD2CB5008F94F2 /* itunesTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = itunesTest.xcodeproj; sourceTree = "<group>"; };
+		8466C3D628AD2CB5008F94F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8466C3D828AD2CB5008F94F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8466C3DA28AD2CB5008F94F2 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		8466C3DC28AD2CB5008F94F2 /* AlbumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		8466C3DD28AD2CB5008F94F2 /* UserDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataStorage.swift; sourceTree = "<group>"; };
+		8466C3DE28AD2CB5008F94F2 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8466C3E128AD2CB5008F94F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8466C3E228AD2CB5008F94F2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8466C3E428AD2CB5008F94F2 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		8466C3E528AD2CB5008F94F2 /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		8466C3E628AD2CB5008F94F2 /* DetailAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAlbumViewController.swift; sourceTree = "<group>"; };
+		8466C3E728AD2CB5008F94F2 /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		8466C3E828AD2CB5008F94F2 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		8466C3E928AD2CB5008F94F2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8466C3EA28AD2CB5008F94F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8466C3EB28AD2CB5008F94F2 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		C809FCB548632EBF9DF852E6 /* Pods-itunesTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itunesTest.release.xcconfig"; path = "Target Support Files/Pods-itunesTest/Pods-itunesTest.release.xcconfig"; sourceTree = "<group>"; };
+		FB46B534CF26601F6B7CFC72 /* Pods-itunesTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itunesTest.debug.xcconfig"; path = "Target Support Files/Pods-itunesTest/Pods-itunesTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8427C4AA28A80B7F00DD3A29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF84C4AE702BA8DCAD45BC8 /* Pods_itunesTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11955EC6C7F563364F1E0F51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A16B1D92C32F76E859BC5 /* Pods_itunesTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8427C4A428A80B7F00DD3A29 = {
+			isa = PBXGroup;
+			children = (
+				8427C4AF28A80B7F00DD3A29 /* itunesTest */,
+				8427C4AE28A80B7F00DD3A29 /* Products */,
+				A696AA1863A50F55A8AD233C /* Pods */,
+				11955EC6C7F563364F1E0F51 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8427C4AE28A80B7F00DD3A29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8427C4AD28A80B7F00DD3A29 /* itunesTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8427C4AF28A80B7F00DD3A29 /* itunesTest */ = {
+			isa = PBXGroup;
+			children = (
+				8427C4B028A80B7F00DD3A29 /* AppDelegate.swift */,
+				8427C4B228A80B7F00DD3A29 /* SceneDelegate.swift */,
+				8427C4CF28A80D2600DD3A29 /* Model */,
+				8427C4CE28A80D1100DD3A29 /* View */,
+				8427C4C528A80C4400DD3A29 /* VC's */,
+				8427C4C428A80C3800DD3A29 /* Extensions */,
+				8427C4B928A80B8000DD3A29 /* Assets.xcassets */,
+				8427C4BB28A80B8000DD3A29 /* LaunchScreen.storyboard */,
+				8427C4BE28A80B8000DD3A29 /* Info.plist */,
+			);
+			path = itunesTest;
+			sourceTree = "<group>";
+		};
+		8427C4C428A80C3800DD3A29 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8427C4D028A8152200DD3A29 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8427C4C528A80C4400DD3A29 /* VC's */ = {
+			isa = PBXGroup;
+			children = (
+				8427C4B428A80B7F00DD3A29 /* AuthViewController.swift */,
+				8427C4C628A80CDD00DD3A29 /* RegistrationViewController.swift */,
+				8427C4C828A80CE700DD3A29 /* AlbumViewController.swift */,
+				8427C4CC28A80CF800DD3A29 /* UserInfoViewController.swift */,
+				8427C4CA28A80CF200DD3A29 /* DetailAlbumViewController.swift */,
+				8466C39128AD2CB5008F94F2 /* itunesTest */,
+			);
+			path = "VC's";
+			sourceTree = "<group>";
+		};
+		8427C4CE28A80D1100DD3A29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8427C4B628A80B7F00DD3A29 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8427C4CF28A80D2600DD3A29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8427C4D228A9145400DD3A29 /* UserDataStorage.swift */,
+				8427C4D428A9151100DD3A29 /* UserModel.swift */,
+				8466C38F28AD24DF008F94F2 /* AlbumModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8466C39128AD2CB5008F94F2 /* itunesTest */ = {
+			isa = PBXGroup;
+			children = (
+				8466C39228AD2CB5008F94F2 /* itunesTest.xcworkspace */,
+				8466C39328AD2CB5008F94F2 /* Pods */,
+				8466C3D128AD2CB5008F94F2 /* Podfile */,
+				8466C3D228AD2CB5008F94F2 /* itunesTest.xcodeproj */,
+				8466C3D528AD2CB5008F94F2 /* itunesTest */,
+				8466C3EB28AD2CB5008F94F2 /* Podfile.lock */,
+			);
+			name = itunesTest;
+			sourceTree = SOURCE_ROOT;
+		};
+		8466C39328AD2CB5008F94F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8466C39428AD2CB5008F94F2 /* Pods.xcodeproj */,
+				8466C39728AD2CB5008F94F2 /* Target Support Files */,
+				8466C3AE28AD2CB5008F94F2 /* Manifest.lock */,
+				8466C3AF28AD2CB5008F94F2 /* Local Podspecs */,
+				8466C3B028AD2CB5008F94F2 /* Headers */,
+				8466C3B128AD2CB5008F94F2 /* IQKeyboardManagerSwift */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8466C39528AD2CB5008F94F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8466C3EF28AD2CB5008F94F2 /* IQKeyboardManagerSwift.framework */,
+				8466C3F128AD2CB5008F94F2 /* Pods-itunesTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8466C39728AD2CB5008F94F2 /* Target Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8466C39828AD2CB5008F94F2 /* Pods-itunesTest */,
+				8466C3A628AD2CB5008F94F2 /* IQKeyboardManagerSwift */,
+			);
+			path = "Target Support Files";
+			sourceTree = "<group>";
+		};
+		8466C39828AD2CB5008F94F2 /* Pods-itunesTest */ = {
+			isa = PBXGroup;
+			children = (
+				8466C39928AD2CB5008F94F2 /* Pods-itunesTest-frameworks.sh */,
+				8466C39A28AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Release-output-files.xcfilelist */,
+				8466C39B28AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Debug-input-files.xcfilelist */,
+				8466C39C28AD2CB5008F94F2 /* Pods-itunesTest-Info.plist */,
+				8466C39D28AD2CB5008F94F2 /* Pods-itunesTest.modulemap */,
+				8466C39E28AD2CB5008F94F2 /* Pods-itunesTest.release.xcconfig */,
+				8466C39F28AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Debug-output-files.xcfilelist */,
+				8466C3A028AD2CB5008F94F2 /* Pods-itunesTest-umbrella.h */,
+				8466C3A128AD2CB5008F94F2 /* Pods-itunesTest.debug.xcconfig */,
+				8466C3A228AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Release-input-files.xcfilelist */,
+				8466C3A328AD2CB5008F94F2 /* Pods-itunesTest-acknowledgements.plist */,
+				8466C3A428AD2CB5008F94F2 /* Pods-itunesTest-acknowledgements.markdown */,
+				8466C3A528AD2CB5008F94F2 /* Pods-itunesTest-dummy.m */,
+			);
+			path = "Pods-itunesTest";
+			sourceTree = "<group>";
+		};
+		8466C3A628AD2CB5008F94F2 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				8466C3A728AD2CB5008F94F2 /* IQKeyboardManagerSwift-Info.plist */,
+				8466C3A828AD2CB5008F94F2 /* IQKeyboardManagerSwift.debug.xcconfig */,
+				8466C3A928AD2CB5008F94F2 /* IQKeyboardManagerSwift.modulemap */,
+				8466C3AA28AD2CB5008F94F2 /* IQKeyboardManagerSwift-prefix.pch */,
+				8466C3AB28AD2CB5008F94F2 /* IQKeyboardManagerSwift-dummy.m */,
+				8466C3AC28AD2CB5008F94F2 /* IQKeyboardManagerSwift-umbrella.h */,
+				8466C3AD28AD2CB5008F94F2 /* IQKeyboardManagerSwift.release.xcconfig */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		8466C3AF28AD2CB5008F94F2 /* Local Podspecs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Local Podspecs";
+			sourceTree = "<group>";
+		};
+		8466C3B028AD2CB5008F94F2 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		8466C3B128AD2CB5008F94F2 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				8466C3B228AD2CB5008F94F2 /* LICENSE.md */,
+				8466C3B328AD2CB5008F94F2 /* README.md */,
+				8466C3B428AD2CB5008F94F2 /* IQKeyboardManager */,
+				8466C3B528AD2CB5008F94F2 /* IQKeyboardManagerSwift */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		8466C3B428AD2CB5008F94F2 /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		8466C3B528AD2CB5008F94F2 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				8466C3B628AD2CB5008F94F2 /* IQTextView */,
+				8466C3B828AD2CB5008F94F2 /* IQKeyboardManager+Internal.swift */,
+				8466C3B928AD2CB5008F94F2 /* IQToolbar */,
+				8466C3C028AD2CB5008F94F2 /* IQKeyboardManager+UIKeyboardNotification.swift */,
+				8466C3C128AD2CB5008F94F2 /* Constants */,
+				8466C3C428AD2CB5008F94F2 /* IQKeyboardManager+Position.swift */,
+				8466C3C528AD2CB5008F94F2 /* IQKeyboardReturnKeyHandler.swift */,
+				8466C3C628AD2CB5008F94F2 /* IQKeyboardManager.swift */,
+				8466C3C728AD2CB5008F94F2 /* IQKeyboardManager+Debug.swift */,
+				8466C3C828AD2CB5008F94F2 /* IQKeyboardManager+OrientationNotification.swift */,
+				8466C3C928AD2CB5008F94F2 /* IQKeyboardManager+Toolbar.swift */,
+				8466C3CA28AD2CB5008F94F2 /* Categories */,
+				8466C3D028AD2CB5008F94F2 /* IQKeyboardManager+UITextFieldViewNotification.swift */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		8466C3B628AD2CB5008F94F2 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				8466C3B728AD2CB5008F94F2 /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		8466C3B928AD2CB5008F94F2 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				8466C3BA28AD2CB5008F94F2 /* IQPreviousNextView.swift */,
+				8466C3BB28AD2CB5008F94F2 /* IQTitleBarButtonItem.swift */,
+				8466C3BC28AD2CB5008F94F2 /* IQBarButtonItem.swift */,
+				8466C3BD28AD2CB5008F94F2 /* IQToolbar.swift */,
+				8466C3BE28AD2CB5008F94F2 /* IQUIView+IQKeyboardToolbar.swift */,
+				8466C3BF28AD2CB5008F94F2 /* IQInvocation.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		8466C3C128AD2CB5008F94F2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8466C3C228AD2CB5008F94F2 /* IQKeyboardManagerConstantsInternal.swift */,
+				8466C3C328AD2CB5008F94F2 /* IQKeyboardManagerConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8466C3CA28AD2CB5008F94F2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8466C3CB28AD2CB5008F94F2 /* IQUIScrollView+Additions.swift */,
+				8466C3CC28AD2CB5008F94F2 /* IQUIViewController+Additions.swift */,
+				8466C3CD28AD2CB5008F94F2 /* IQUITextFieldView+Additions.swift */,
+				8466C3CE28AD2CB5008F94F2 /* IQUIView+Hierarchy.swift */,
+				8466C3CF28AD2CB5008F94F2 /* IQNSArray+Sort.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		8466C3D328AD2CB5008F94F2 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8466C3D528AD2CB5008F94F2 /* itunesTest */ = {
+			isa = PBXGroup;
+			children = (
+				8466C3D628AD2CB5008F94F2 /* Assets.xcassets */,
+				8466C3D728AD2CB5008F94F2 /* LaunchScreen.storyboard */,
+				8466C3D928AD2CB5008F94F2 /* Extensions */,
+				8466C3DB28AD2CB5008F94F2 /* Model */,
+				8466C3DF28AD2CB5008F94F2 /* View */,
+				8466C3E228AD2CB5008F94F2 /* AppDelegate.swift */,
+				8466C3E328AD2CB5008F94F2 /* VC's */,
+				8466C3E928AD2CB5008F94F2 /* Info.plist */,
+				8466C3EA28AD2CB5008F94F2 /* SceneDelegate.swift */,
+			);
+			path = itunesTest;
+			sourceTree = "<group>";
+		};
+		8466C3D928AD2CB5008F94F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8466C3DA28AD2CB5008F94F2 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8466C3DB28AD2CB5008F94F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8466C3DC28AD2CB5008F94F2 /* AlbumModel.swift */,
+				8466C3DD28AD2CB5008F94F2 /* UserDataStorage.swift */,
+				8466C3DE28AD2CB5008F94F2 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8466C3DF28AD2CB5008F94F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8466C3E028AD2CB5008F94F2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8466C3E328AD2CB5008F94F2 /* VC's */ = {
+			isa = PBXGroup;
+			children = (
+				8466C3E428AD2CB5008F94F2 /* AuthViewController.swift */,
+				8466C3E528AD2CB5008F94F2 /* UserInfoViewController.swift */,
+				8466C3E628AD2CB5008F94F2 /* DetailAlbumViewController.swift */,
+				8466C3E728AD2CB5008F94F2 /* AlbumViewController.swift */,
+				8466C3E828AD2CB5008F94F2 /* RegistrationViewController.swift */,
+			);
+			path = "VC's";
+			sourceTree = "<group>";
+		};
+		A696AA1863A50F55A8AD233C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB46B534CF26601F6B7CFC72 /* Pods-itunesTest.debug.xcconfig */,
+				C809FCB548632EBF9DF852E6 /* Pods-itunesTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8427C4AC28A80B7F00DD3A29 /* itunesTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8427C4C128A80B8000DD3A29 /* Build configuration list for PBXNativeTarget "itunesTest" */;
+			buildPhases = (
+				2F6A257468168B5A06451F4B /* [CP] Check Pods Manifest.lock */,
+				8427C4A928A80B7F00DD3A29 /* Sources */,
+				8427C4AA28A80B7F00DD3A29 /* Frameworks */,
+				8427C4AB28A80B7F00DD3A29 /* Resources */,
+				960AE2A58F5254A83E16661C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = itunesTest;
+			productName = itunesTest;
+			productReference = 8427C4AD28A80B7F00DD3A29 /* itunesTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8427C4A528A80B7F00DD3A29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					8427C4AC28A80B7F00DD3A29 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 8427C4A828A80B7F00DD3A29 /* Build configuration list for PBXProject "itunesTest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8427C4A428A80B7F00DD3A29;
+			productRefGroup = 8427C4AE28A80B7F00DD3A29 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8466C3D328AD2CB5008F94F2 /* Products */;
+					ProjectRef = 8466C3D228AD2CB5008F94F2 /* itunesTest.xcodeproj */;
+				},
+				{
+					ProductGroup = 8466C39528AD2CB5008F94F2 /* Products */;
+					ProjectRef = 8466C39428AD2CB5008F94F2 /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8427C4AC28A80B7F00DD3A29 /* itunesTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8466C3EF28AD2CB5008F94F2 /* IQKeyboardManagerSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IQKeyboardManagerSwift.framework;
+			remoteRef = 8466C3EE28AD2CB5008F94F2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8466C3F128AD2CB5008F94F2 /* Pods-itunesTest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = "Pods-itunesTest";
+			path = Pods_itunesTest.framework;
+			remoteRef = 8466C3F028AD2CB5008F94F2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8427C4AB28A80B7F00DD3A29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8466C3F828AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Debug-output-files.xcfilelist in Resources */,
+				8466C3F928AD2CB5008F94F2 /* Pods-itunesTest.debug.xcconfig in Resources */,
+				8466C42C28AD2CB5008F94F2 /* Podfile.lock in Resources */,
+				8466C41D28AD2CB5008F94F2 /* Assets.xcassets in Resources */,
+				8466C42328AD2CB5008F94F2 /* Main.storyboard in Resources */,
+				8466C40428AD2CB5008F94F2 /* README.md in Resources */,
+				8466C3FB28AD2CB5008F94F2 /* Pods-itunesTest-acknowledgements.plist in Resources */,
+				8466C3F628AD2CB5008F94F2 /* Pods-itunesTest-Info.plist in Resources */,
+				8466C3F428AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Release-output-files.xcfilelist in Resources */,
+				8466C3F728AD2CB5008F94F2 /* Pods-itunesTest.release.xcconfig in Resources */,
+				8427C4BD28A80B8000DD3A29 /* LaunchScreen.storyboard in Resources */,
+				8466C41E28AD2CB5008F94F2 /* LaunchScreen.storyboard in Resources */,
+				8466C3FC28AD2CB5008F94F2 /* Pods-itunesTest-acknowledgements.markdown in Resources */,
+				8466C3FA28AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Release-input-files.xcfilelist in Resources */,
+				8466C40228AD2CB5008F94F2 /* Manifest.lock in Resources */,
+				8427C4BA28A80B8000DD3A29 /* Assets.xcassets in Resources */,
+				8466C41C28AD2CB5008F94F2 /* Podfile in Resources */,
+				8466C3F328AD2CB5008F94F2 /* Pods-itunesTest-frameworks.sh in Resources */,
+				8466C40128AD2CB5008F94F2 /* IQKeyboardManagerSwift.release.xcconfig in Resources */,
+				8466C3F528AD2CB5008F94F2 /* Pods-itunesTest-frameworks-Debug-input-files.xcfilelist in Resources */,
+				8466C40328AD2CB5008F94F2 /* LICENSE.md in Resources */,
+				8466C3FF28AD2CB5008F94F2 /* IQKeyboardManagerSwift.debug.xcconfig in Resources */,
+				8466C3F228AD2CB5008F94F2 /* itunesTest.xcworkspace in Resources */,
+				8427C4B828A80B7F00DD3A29 /* Main.storyboard in Resources */,
+				8466C42A28AD2CB5008F94F2 /* Info.plist in Resources */,
+				8466C3FE28AD2CB5008F94F2 /* IQKeyboardManagerSwift-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F6A257468168B5A06451F4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-itunesTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		960AE2A58F5254A83E16661C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-itunesTest/Pods-itunesTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-itunesTest/Pods-itunesTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-itunesTest/Pods-itunesTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8427C4A928A80B7F00DD3A29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8466C41B28AD2CB5008F94F2 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */,
+				8466C41128AD2CB5008F94F2 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				8427C4B528A80B7F00DD3A29 /* AuthViewController.swift in Sources */,
+				8466C41F28AD2CB5008F94F2 /* StringExtension.swift in Sources */,
+				8466C42928AD2CB5008F94F2 /* RegistrationViewController.swift in Sources */,
+				8466C42428AD2CB5008F94F2 /* AppDelegate.swift in Sources */,
+				8466C42728AD2CB5008F94F2 /* DetailAlbumViewController.swift in Sources */,
+				8427C4CD28A80CF800DD3A29 /* UserInfoViewController.swift in Sources */,
+				8466C42628AD2CB5008F94F2 /* UserInfoViewController.swift in Sources */,
+				8466C40A28AD2CB5008F94F2 /* IQToolbar.swift in Sources */,
+				8466C41528AD2CB5008F94F2 /* IQKeyboardManager+Toolbar.swift in Sources */,
+				8466C41828AD2CB5008F94F2 /* IQUITextFieldView+Additions.swift in Sources */,
+				8427C4D528A9151100DD3A29 /* UserModel.swift in Sources */,
+				8466C42528AD2CB5008F94F2 /* AuthViewController.swift in Sources */,
+				8466C42028AD2CB5008F94F2 /* AlbumModel.swift in Sources */,
+				8466C40F28AD2CB5008F94F2 /* IQKeyboardManagerConstants.swift in Sources */,
+				8427C4CB28A80CF200DD3A29 /* DetailAlbumViewController.swift in Sources */,
+				8466C41028AD2CB5008F94F2 /* IQKeyboardManager+Position.swift in Sources */,
+				8466C40728AD2CB5008F94F2 /* IQPreviousNextView.swift in Sources */,
+				8466C40E28AD2CB5008F94F2 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				8427C4C928A80CE700DD3A29 /* AlbumViewController.swift in Sources */,
+				8466C41628AD2CB5008F94F2 /* IQUIScrollView+Additions.swift in Sources */,
+				8466C42828AD2CB5008F94F2 /* AlbumViewController.swift in Sources */,
+				8427C4D128A8152200DD3A29 /* StringExtension.swift in Sources */,
+				8466C42228AD2CB5008F94F2 /* UserModel.swift in Sources */,
+				8466C41328AD2CB5008F94F2 /* IQKeyboardManager+Debug.swift in Sources */,
+				8466C40028AD2CB5008F94F2 /* IQKeyboardManagerSwift-dummy.m in Sources */,
+				8466C40C28AD2CB5008F94F2 /* IQInvocation.swift in Sources */,
+				8466C40628AD2CB5008F94F2 /* IQKeyboardManager+Internal.swift in Sources */,
+				8466C41228AD2CB5008F94F2 /* IQKeyboardManager.swift in Sources */,
+				8466C41428AD2CB5008F94F2 /* IQKeyboardManager+OrientationNotification.swift in Sources */,
+				8466C41A28AD2CB5008F94F2 /* IQNSArray+Sort.swift in Sources */,
+				8466C3FD28AD2CB5008F94F2 /* Pods-itunesTest-dummy.m in Sources */,
+				8427C4B128A80B7F00DD3A29 /* AppDelegate.swift in Sources */,
+				8466C41728AD2CB5008F94F2 /* IQUIViewController+Additions.swift in Sources */,
+				8466C41928AD2CB5008F94F2 /* IQUIView+Hierarchy.swift in Sources */,
+				8466C42128AD2CB5008F94F2 /* UserDataStorage.swift in Sources */,
+				8427C4C728A80CDD00DD3A29 /* RegistrationViewController.swift in Sources */,
+				8466C40928AD2CB5008F94F2 /* IQBarButtonItem.swift in Sources */,
+				8466C42B28AD2CB5008F94F2 /* SceneDelegate.swift in Sources */,
+				8466C39028AD24DF008F94F2 /* AlbumModel.swift in Sources */,
+				8466C40D28AD2CB5008F94F2 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */,
+				8427C4B328A80B7F00DD3A29 /* SceneDelegate.swift in Sources */,
+				8466C40828AD2CB5008F94F2 /* IQTitleBarButtonItem.swift in Sources */,
+				8427C4D328A9145400DD3A29 /* UserDataStorage.swift in Sources */,
+				8466C40B28AD2CB5008F94F2 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
+				8466C40528AD2CB5008F94F2 /* IQTextView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8427C4B628A80B7F00DD3A29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8427C4B728A80B7F00DD3A29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8427C4BB28A80B8000DD3A29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8427C4BC28A80B8000DD3A29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8466C3D728AD2CB5008F94F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8466C3D828AD2CB5008F94F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8466C3E028AD2CB5008F94F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8466C3E128AD2CB5008F94F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8427C4BF28A80B8000DD3A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8427C4C028A80B8000DD3A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8427C4C228A80B8000DD3A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB46B534CF26601F6B7CFC72 /* Pods-itunesTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L9TZY2CFT3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = itunesTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itunes-api.itunesTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8427C4C328A80B8000DD3A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C809FCB548632EBF9DF852E6 /* Pods-itunesTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L9TZY2CFT3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = itunesTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.itunes-api.itunesTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8427C4A828A80B7F00DD3A29 /* Build configuration list for PBXProject "itunesTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8427C4BF28A80B8000DD3A29 /* Debug */,
+				8427C4C028A80B8000DD3A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8427C4C128A80B8000DD3A29 /* Build configuration list for PBXNativeTarget "itunesTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8427C4C228A80B8000DD3A29 /* Debug */,
+				8427C4C328A80B8000DD3A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8427C4A528A80B7F00DD3A29 /* Project object */;
+}
