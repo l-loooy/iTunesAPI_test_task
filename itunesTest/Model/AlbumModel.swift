@@ -13,8 +13,7 @@
 //    •    название группы
 //    •    год выхода альбома
 //    •    список песен
-//         https://itunes.apple.com/search?
-//https://itunes.apple.com/search?term=acrtic+monkeys&entity
+//         
 
 import Foundation
 

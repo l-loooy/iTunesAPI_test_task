@@ -77,9 +77,11 @@
 		8466C42728AD2CB5008F94F2 /* DetailAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3E628AD2CB5008F94F2 /* DetailAlbumViewController.swift */; };
 		8466C42828AD2CB5008F94F2 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3E728AD2CB5008F94F2 /* AlbumViewController.swift */; };
 		8466C42928AD2CB5008F94F2 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3E828AD2CB5008F94F2 /* RegistrationViewController.swift */; };
-		8466C42A28AD2CB5008F94F2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3E928AD2CB5008F94F2 /* Info.plist */; };
 		8466C42B28AD2CB5008F94F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C3EA28AD2CB5008F94F2 /* SceneDelegate.swift */; };
 		8466C42C28AD2CB5008F94F2 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 8466C3EB28AD2CB5008F94F2 /* Podfile.lock */; };
+		8466C42E28AD2E7E008F94F2 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C42D28AD2E7E008F94F2 /* NetworkRequest.swift */; };
+		8466C43128AD365C008F94F2 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C43028AD365C008F94F2 /* NetworkDataFetch.swift */; };
+		8466C44328AD6C7D008F94F2 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C44128AD6C7D008F94F2 /* AlbumTableViewCell.swift */; };
 		CCF84C4AE702BA8DCAD45BC8 /* Pods_itunesTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0A16B1D92C32F76E859BC5 /* Pods_itunesTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -184,6 +186,9 @@
 		8466C3E928AD2CB5008F94F2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8466C3EA28AD2CB5008F94F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8466C3EB28AD2CB5008F94F2 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		8466C42D28AD2E7E008F94F2 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		8466C43028AD365C008F94F2 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
+		8466C44128AD6C7D008F94F2 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
 		C809FCB548632EBF9DF852E6 /* Pods-itunesTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itunesTest.release.xcconfig"; path = "Target Support Files/Pods-itunesTest/Pods-itunesTest.release.xcconfig"; sourceTree = "<group>"; };
 		FB46B534CF26601F6B7CFC72 /* Pods-itunesTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itunesTest.debug.xcconfig"; path = "Target Support Files/Pods-itunesTest/Pods-itunesTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				8427C4B028A80B7F00DD3A29 /* AppDelegate.swift */,
+				8466C42F28AD2E85008F94F2 /* Network */,
 				8427C4B228A80B7F00DD3A29 /* SceneDelegate.swift */,
 				8427C4CF28A80D2600DD3A29 /* Model */,
 				8427C4CE28A80D1100DD3A29 /* View */,
@@ -253,6 +259,7 @@
 		8427C4C528A80C4400DD3A29 /* VC's */ = {
 			isa = PBXGroup;
 			children = (
+				8466C43A28AD6393008F94F2 /* Cells */,
 				8427C4B428A80B7F00DD3A29 /* AuthViewController.swift */,
 				8427C4C628A80CDD00DD3A29 /* RegistrationViewController.swift */,
 				8427C4C828A80CE700DD3A29 /* AlbumViewController.swift */,
@@ -512,6 +519,23 @@
 			path = "VC's";
 			sourceTree = "<group>";
 		};
+		8466C42F28AD2E85008F94F2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8466C42D28AD2E7E008F94F2 /* NetworkRequest.swift */,
+				8466C43028AD365C008F94F2 /* NetworkDataFetch.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8466C43A28AD6393008F94F2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8466C44128AD6C7D008F94F2 /* AlbumTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		A696AA1863A50F55A8AD233C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -633,7 +657,6 @@
 				8466C3FF28AD2CB5008F94F2 /* IQKeyboardManagerSwift.debug.xcconfig in Resources */,
 				8466C3F228AD2CB5008F94F2 /* itunesTest.xcworkspace in Resources */,
 				8427C4B828A80B7F00DD3A29 /* Main.storyboard in Resources */,
-				8466C42A28AD2CB5008F94F2 /* Info.plist in Resources */,
 				8466C3FE28AD2CB5008F94F2 /* IQKeyboardManagerSwift-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -689,6 +712,7 @@
 			files = (
 				8466C41B28AD2CB5008F94F2 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */,
 				8466C41128AD2CB5008F94F2 /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				8466C43128AD365C008F94F2 /* NetworkDataFetch.swift in Sources */,
 				8427C4B528A80B7F00DD3A29 /* AuthViewController.swift in Sources */,
 				8466C41F28AD2CB5008F94F2 /* StringExtension.swift in Sources */,
 				8466C42928AD2CB5008F94F2 /* RegistrationViewController.swift in Sources */,
@@ -721,6 +745,8 @@
 				8466C41A28AD2CB5008F94F2 /* IQNSArray+Sort.swift in Sources */,
 				8466C3FD28AD2CB5008F94F2 /* Pods-itunesTest-dummy.m in Sources */,
 				8427C4B128A80B7F00DD3A29 /* AppDelegate.swift in Sources */,
+				8466C44328AD6C7D008F94F2 /* AlbumTableViewCell.swift in Sources */,
+				8466C42E28AD2E7E008F94F2 /* NetworkRequest.swift in Sources */,
 				8466C41728AD2CB5008F94F2 /* IQUIViewController+Additions.swift in Sources */,
 				8466C41928AD2CB5008F94F2 /* IQUIView+Hierarchy.swift in Sources */,
 				8466C42128AD2CB5008F94F2 /* UserDataStorage.swift in Sources */,
