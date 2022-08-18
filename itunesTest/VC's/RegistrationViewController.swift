@@ -34,7 +34,6 @@ class RegistrationViewController: UIViewController {
             allowsOnlyEnglishInput(secondNameTextField)
         }
     }
-    
     @IBOutlet weak var birthTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField! {
@@ -43,7 +42,6 @@ class RegistrationViewController: UIViewController {
         }
     }
     @IBOutlet weak var passwordTextField: UITextField!
-    
     
     //имеют два состояния: required field и wrong input
     @IBOutlet weak var nameLabel: UILabel!
@@ -68,9 +66,7 @@ class RegistrationViewController: UIViewController {
     private func setupPhoneTextField() {
         phoneTextField.keyboardType = .decimalPad
     }
-    
-    
-    
+
     private func setTextField(textField: UITextField,
                               label: UILabel,
                               validType: String.ValidTypes,

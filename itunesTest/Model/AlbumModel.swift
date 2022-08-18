@@ -31,4 +31,6 @@ struct Album: Decodable {
     let artworkUrl100: String?
     let trackCount: Int
     
+    let collectionId: Int
+    
 }

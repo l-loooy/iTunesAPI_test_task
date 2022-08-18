@@ -82,6 +82,7 @@
 		8466C42E28AD2E7E008F94F2 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C42D28AD2E7E008F94F2 /* NetworkRequest.swift */; };
 		8466C43128AD365C008F94F2 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C43028AD365C008F94F2 /* NetworkDataFetch.swift */; };
 		8466C44328AD6C7D008F94F2 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466C44128AD6C7D008F94F2 /* AlbumTableViewCell.swift */; };
+		84E100E028AE9D1C00F3CAB3 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E100DF28AE9D1C00F3CAB3 /* SongModel.swift */; };
 		CCF84C4AE702BA8DCAD45BC8 /* Pods_itunesTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0A16B1D92C32F76E859BC5 /* Pods_itunesTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -189,6 +190,7 @@
 		8466C42D28AD2E7E008F94F2 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		8466C43028AD365C008F94F2 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
 		8466C44128AD6C7D008F94F2 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		84E100DF28AE9D1C00F3CAB3 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
 		C809FCB548632EBF9DF852E6 /* Pods-itunesTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itunesTest.release.xcconfig"; path = "Target Support Files/Pods-itunesTest/Pods-itunesTest.release.xcconfig"; sourceTree = "<group>"; };
 		FB46B534CF26601F6B7CFC72 /* Pods-itunesTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-itunesTest.debug.xcconfig"; path = "Target Support Files/Pods-itunesTest/Pods-itunesTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -263,8 +265,8 @@
 				8427C4B428A80B7F00DD3A29 /* AuthViewController.swift */,
 				8427C4C628A80CDD00DD3A29 /* RegistrationViewController.swift */,
 				8427C4C828A80CE700DD3A29 /* AlbumViewController.swift */,
-				8427C4CC28A80CF800DD3A29 /* UserInfoViewController.swift */,
 				8427C4CA28A80CF200DD3A29 /* DetailAlbumViewController.swift */,
+				8427C4CC28A80CF800DD3A29 /* UserInfoViewController.swift */,
 				8466C39128AD2CB5008F94F2 /* itunesTest */,
 			);
 			path = "VC's";
@@ -283,6 +285,7 @@
 			children = (
 				8427C4D228A9145400DD3A29 /* UserDataStorage.swift */,
 				8427C4D428A9151100DD3A29 /* UserModel.swift */,
+				84E100DF28AE9D1C00F3CAB3 /* SongModel.swift */,
 				8466C38F28AD24DF008F94F2 /* AlbumModel.swift */,
 			);
 			path = Model;
@@ -737,6 +740,7 @@
 				8427C4D128A8152200DD3A29 /* StringExtension.swift in Sources */,
 				8466C42228AD2CB5008F94F2 /* UserModel.swift in Sources */,
 				8466C41328AD2CB5008F94F2 /* IQKeyboardManager+Debug.swift in Sources */,
+				84E100E028AE9D1C00F3CAB3 /* SongModel.swift in Sources */,
 				8466C40028AD2CB5008F94F2 /* IQKeyboardManagerSwift-dummy.m in Sources */,
 				8466C40C28AD2CB5008F94F2 /* IQInvocation.swift in Sources */,
 				8466C40628AD2CB5008F94F2 /* IQKeyboardManager+Internal.swift in Sources */,

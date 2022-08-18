@@ -69,7 +69,7 @@ class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpDelegate()
+        setupDelegate()
     }
     
     @IBAction func signInButtonPressed(_ sender: UIButton) {
@@ -93,11 +93,16 @@ class AuthViewController: UIViewController {
         }
     }
     
+    @IBAction func signUpButtonPressed(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let registrationVC = storyboard.instantiateViewController(withIdentifier: "RegistrationViewController")
+        self.navigationController?.pushViewController(registrationVC, animated: true)
+    }
+    
     //1.get user with specified email
     //2.check the password associated with the mail
     //3.compare the password from the database with the one entered in the textfield
     private func findUserInUserDataStorage(email: String) -> UserModel? {
-        
         let usersDataStorage = UserDataStorage.shared.users
         for user in usersDataStorage {
             if user.email == email {
@@ -106,14 +111,7 @@ class AuthViewController: UIViewController {
         }
         return nil
     }
-    
-    @IBAction func signUpButtonPressed(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let registrationVC = storyboard.instantiateViewController(withIdentifier: "RegistrationViewController")
-        self.navigationController?.pushViewController(registrationVC, animated: true)
-    }
-    
-    
+
     private func showAlert() {
         let alertController = UIAlertController(title: "Error", message: "User Not Found", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Cancel", style: .destructive)
@@ -126,7 +124,7 @@ class AuthViewController: UIViewController {
 // MARK: - UITextFieldDelegate
 extension AuthViewController: UITextFieldDelegate {
     
-    private func setUpDelegate() {
+    private func setupDelegate() {
         emailTextField.delegate = self
         passwordTextField.delegate = self
     }
