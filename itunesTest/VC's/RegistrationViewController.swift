@@ -9,38 +9,35 @@
 //lolaevgasu@gmail.com
 //Lolaevgasu12345
 
-
-
 import UIKit
 
-class RegistrationViewController: UIViewController {
-    
-    private let datePicker = UIDatePicker()
-    
-    //textField text which whould be validate (name, secondName)
-    let nameValidType: String.ValidTypes = .name
-    let secondNameValidType: String.ValidTypes = .name
-    let emailValidType: String.ValidTypes = .email
-    let passwordValidType: String.ValidTypes = .password
-    
+private struct Constants {
+    static var phoneCharsMaxCount = 18
+}
+
+final class RegistrationViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField! {
         didSet {
             allowsOnlyEnglishInput(nameTextField)
         }
     }
+    
     @IBOutlet weak var secondNameTextField: UITextField! {
         didSet {
             allowsOnlyEnglishInput(secondNameTextField)
         }
     }
+    
     @IBOutlet weak var birthTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
+    
     @IBOutlet weak var emailTextField: UITextField! {
         didSet {
             allowsOnlyEnglishInput(emailTextField)
         }
     }
+    
     @IBOutlet weak var passwordTextField: UITextField!
     
     //имеют два состояния: required field и wrong input
@@ -51,6 +48,13 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     
+    private let datePicker = UIDatePicker()
+    
+    //textField text which should be validate
+    private let nameValidType: String.ValidTypes = .name
+    private let secondNameValidType: String.ValidTypes = .name
+    private let emailValidType: String.ValidTypes = .email
+    private let passwordValidType: String.ValidTypes = .password
     
     override func viewWillAppear(_ animated: Bool) {
         nameTextField.becomeFirstResponder()
@@ -74,7 +78,6 @@ class RegistrationViewController: UIViewController {
                               errorMessage: String,
                               string: String,
                               range: NSRange) {
-        
         let text = (textField.text ?? "") + string
         var result: String
         
@@ -83,7 +86,6 @@ class RegistrationViewController: UIViewController {
             let startText = text.startIndex
             let endText = text.index(startText, offsetBy: text.count - 1)
             result = String(text[startText..<endText])
-            print(result)
         } else {
             result = text
         }
@@ -103,7 +105,6 @@ class RegistrationViewController: UIViewController {
                                        mask: String,
                                        string: String,
                                        range: NSRange) -> String {
-        
         let text = textField.text ?? ""
         
         let phone = (text as NSString).replacingCharacters(in: range, with: string)
@@ -120,7 +121,7 @@ class RegistrationViewController: UIViewController {
                 result.append(character)
             }
             
-            if result.count == 18 {
+            if result.count == Constants.phoneCharsMaxCount {
                 phoneLabel.text = "Phone is valid"
                 phoneLabel.textColor = .systemGreen
             } else {
@@ -129,7 +130,6 @@ class RegistrationViewController: UIViewController {
             }
         }
         return result
-        
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
@@ -145,7 +145,7 @@ class RegistrationViewController: UIViewController {
         if nameText.isValid(validType: nameValidType)
             && secondNameText.isValid(validType: secondNameValidType)
             && !birthText.isEmpty
-            && phoneText.count == 18
+            && phoneText.count == Constants.phoneCharsMaxCount
             && emailText.isValid(validType: emailValidType)
             && passwordText.isValid(validType: passwordValidType) {
             
@@ -166,8 +166,6 @@ class RegistrationViewController: UIViewController {
                       formIsValid: false)
         }
     }
-    
-    
 }
 
 
@@ -250,7 +248,6 @@ extension RegistrationViewController: UITextFieldDelegate {
     private func allowsOnlyEnglishInput(_ textField: UITextField) {
         textField.keyboardType = .asciiCapable
     }
-    
 }
 
 
@@ -261,6 +258,7 @@ extension RegistrationViewController {
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done,
                                          target: self,
                                          action: #selector(doneButtonPressed))
+        //set doneButton on the right side
         let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
                                         target: self,
                                         action: nil)
@@ -294,7 +292,7 @@ extension RegistrationViewController {
     }
     
     private func setAgesLimits() {
-        //ограничение по возрасту 18...100
+        //set age limits from 18...100
         let maxAge = Calendar.current.date(byAdding: .year, value: -18, to: Date())
         let minAge = Calendar.current.date(byAdding: .year, value: -100, to: Date())
         datePicker.maximumDate = maxAge

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AlbumTableViewCell: UITableViewCell {
+final class AlbumTableViewCell: UITableViewCell {
     
     static let shared = AlbumTableViewCell()
     
@@ -35,7 +35,7 @@ class AlbumTableViewCell: UITableViewCell {
                     let image = UIImage(data: data)
                     self?.albumLogo?.image = image
                     print("ALBUM LOGO SUCCESS")
-                case .failure(let error):
+                case .failure(_):
                     self?.albumLogo.image = nil
                     print("ALBUM LOGO ERROR")
                 }

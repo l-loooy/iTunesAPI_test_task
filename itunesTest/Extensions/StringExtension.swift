@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 extension String {
     
     enum ValidTypes {
@@ -39,5 +38,4 @@ extension String {
         }
         return NSPredicate(format: format, regex).evaluate(with: self)
     }
-    
 }

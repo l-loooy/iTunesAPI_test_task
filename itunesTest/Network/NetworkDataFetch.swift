@@ -7,13 +7,11 @@
 
 import Foundation
 
-class NetworkDataFetch {
+final class NetworkDataFetch {
     
     static let shared = NetworkDataFetch()
-    private init() {}
     
     func fetchAlbums(urlString: String, response: @escaping (AlbumModel?, Error?) -> Void) {
-        
         NetworkRequest.shared.requestData(urlString: urlString) { result in
             switch result {
             case .success(let data):
@@ -32,7 +30,6 @@ class NetworkDataFetch {
     }
     
     func fetchSongs(urlString: String, response: @escaping (SongModel?, Error?) -> Void) {
-        
         NetworkRequest.shared.requestData(urlString: urlString) { result in
             switch result {
             case .success(let data):

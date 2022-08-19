@@ -9,7 +9,6 @@ import UIKit
 
 class UserInfoViewController: UIViewController {
 
-    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var secondNameLabel: UILabel!
     @IBOutlet weak var birthLabel: UILabel!
@@ -17,22 +16,23 @@ class UserInfoViewController: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     
+    private lazy var dateFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd.MM.yyyy"
+        return dateFormatter
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setActiveUserData()
     }
-    
 
     private func setActiveUserData() {
         guard let activeUser = UserDataStorage.shared.activeUser else {
             return
         }
         
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd.MM.yyyy"
         let dateString = dateFormatter.string(from: activeUser.birth)
-        
         
         nameLabel.text = activeUser.name
         secondNameLabel.text = activeUser.secondName

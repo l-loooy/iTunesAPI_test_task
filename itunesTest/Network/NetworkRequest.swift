@@ -7,10 +7,9 @@
 
 import Foundation
 
-class NetworkRequest {
+final class NetworkRequest {
     
     static let shared = NetworkRequest()
-    private init() {}
     
     //completion for error handling
     //Result<type, type> has 2 conditions (succces & error)

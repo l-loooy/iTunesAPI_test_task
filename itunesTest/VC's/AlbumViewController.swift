@@ -7,13 +7,20 @@
 
 import UIKit
 
-class AlbumViewController: UIViewController {
-    
-    var albums = [Album]()
-    var timer: Timer?
-    let searchController = UISearchController(searchResultsController: nil)
+private struct Constants {
+    static var tableRowHeight: CGFloat = 65
+    static var searchBarPlaceholder = "Search"
+    static var navBarTitle = "Albums"
+    static var searchDelay: CGFloat = 0.5
+}
+
+final class AlbumViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    private var albums = [Album]()
+    private var timer: Timer?
+    private let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +28,7 @@ class AlbumViewController: UIViewController {
         setupSearchController()
         setupNavigationBar()
         
-        tableView.rowHeight = 65
-        
+        tableView.rowHeight = Constants.tableRowHeight
     }
     
     private func fetchAlbums(albumName: String) {
@@ -38,7 +44,6 @@ class AlbumViewController: UIViewController {
                 }
                 
                 self?.albums = sortedAlbums
-                print(self?.albums)
                 self?.tableView.reloadData()
             } else {
                 print(error?.localizedDescription)
@@ -53,27 +58,28 @@ class AlbumViewController: UIViewController {
     }
     
     private func setupSearchController() {
-        searchController.searchBar.placeholder = "Search"
+        searchController.searchBar.placeholder = Constants.searchBarPlaceholder
         searchController.obscuresBackgroundDuringPresentation = false
     }
     
     private func setupNavigationBar() {
-        navigationItem.title = "Albums"
+        navigationItem.title = Constants.navBarTitle
         navigationItem.searchController = searchController
     }
-    
 }
 
 
 //MARK: - SearchController
 extension AlbumViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-
         //search russian albums
-        guard let text = searchText.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { return }
-        if text != "" {
+        guard let text = searchText.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else {
+            return
+        }
+        
+        if !text.isEmpty {
             timer?.invalidate()
-            timer = Timer.scheduledTimer(withTimeInterval: 0.5,
+            timer = Timer.scheduledTimer(withTimeInterval: Constants.searchDelay,
                                          repeats: false,
                                          block: { [weak self] _ in
                 self?.fetchAlbums(albumName: text)
@@ -114,8 +120,5 @@ extension AlbumViewController: UITableViewDelegate, UITableViewDataSource {
         detailAlbumVC.title = album.artistName
         
         navigationController?.pushViewController(detailAlbumVC, animated: true)
-       
-        
     }
-    
 }

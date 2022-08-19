@@ -7,8 +7,7 @@
 
 import Foundation
 
-class UserDataStorage {
-    
+final class UserDataStorage {
     static let shared = UserDataStorage()
     
     //replace to Constants
@@ -16,11 +15,6 @@ class UserDataStorage {
         case users
         case activeUser
     }
-    
-    let userDefaults = UserDefaults.standard
-    let userKey = UserKeys.users.rawValue
-    let activeUserKey = UserKeys.activeUser.rawValue
-    
     
     //storage for all users
     var users: [UserModel] {
@@ -42,43 +36,43 @@ class UserDataStorage {
         }
     }
     
-    
-    
-        func saveUserData(name: String,
-                          secondName: String,
-                          birth: Date,
-                          phone: String,
-                          email: String,
-                          password: String) {
-            let user = UserModel(name: name,
-                                 secondName: secondName,
-                                 birth: birth,
-                                 phone: phone,
-                                 email: email,
-                                 password: password)
-            self.users.append(user)
-            print("user saved")
-        }
-    
-    
-    
-        var activeUser: UserModel? {
-            get {
-                guard let data = userDefaults.value(forKey: activeUserKey) as? Data else {
-                    return nil
-                }
-                let activeUserModel = try! PropertyListDecoder().decode(UserModel.self, from: data)
-                return activeUserModel
+    var activeUser: UserModel? {
+        get {
+            guard let data = userDefaults.value(forKey: activeUserKey) as? Data else {
+                return nil
             }
-            set {
-                guard let data = try? PropertyListEncoder().encode(newValue) else {return}
-                userDefaults.set(data, forKey: activeUserKey)
-            }
+            let activeUserModel = try! PropertyListDecoder().decode(UserModel.self, from: data)
+            return activeUserModel
         }
+        set {
+            guard let data = try? PropertyListEncoder().encode(newValue) else {return}
+            userDefaults.set(data, forKey: activeUserKey)
+        }
+    }
+    
+    private let userDefaults = UserDefaults.standard
+    private let userKey = UserKeys.users.rawValue
+    private let activeUserKey = UserKeys.activeUser.rawValue
+    
+    func saveUserData(name: String,
+                      secondName: String,
+                      birth: Date,
+                      phone: String,
+                      email: String,
+                      password: String) {
+        let user = UserModel(name: name,
+                             secondName: secondName,
+                             birth: birth,
+                             phone: phone,
+                             email: email,
+                             password: password)
+        self.users.append(user)
+        print("user saved")
+    }
     
     //every time after signUp re-writing activeUser (so we have only one)
-        func saveActiveUser(_ activeUser: UserModel) {
-            self.activeUser = activeUser
-        }
+    func saveActiveUser(_ activeUser: UserModel) {
+        self.activeUser = activeUser
+    }
     
 }

@@ -15,13 +15,9 @@
 //    •    список песен
 //         
 
-import Foundation
-
 struct AlbumModel: Decodable {
     let results: [Album]
-    
 }
-
 
 struct Album: Decodable {
     let artistName: String
@@ -30,7 +26,5 @@ struct Album: Decodable {
     // if album has no cover app will crush
     let artworkUrl100: String?
     let trackCount: Int
-    
     let collectionId: Int
-    
 }

@@ -57,12 +57,9 @@
 //
 //API: https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/index.html#//apple_ref/doc/uid/TP40017632-CH3-SW1
 
-
-
 import UIKit
 
-class AuthViewController: UIViewController {
-    
+final class AuthViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -72,22 +69,18 @@ class AuthViewController: UIViewController {
         setupDelegate()
     }
     
+    //Auth button
     @IBAction func signInButtonPressed(_ sender: UIButton) {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
         let user = findUserInUserDataStorage(email: email)
         
-        if user == nil {
-            showAlert()
-        } else if user?.password == password {
+        if let user = user, user.password == password {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let albumVC = storyboard.instantiateViewController(withIdentifier: "AlbumViewController")
             self.navigationController?.pushViewController(albumVC, animated: true)
             
-            guard let activeUser = user else {
-                return
-            }
-            UserDataStorage.shared.saveActiveUser(activeUser)
+            UserDataStorage.shared.saveActiveUser(user)
         } else {
             showAlert()
         }
@@ -118,7 +111,6 @@ class AuthViewController: UIViewController {
         alertController.addAction(alertAction)
         present(alertController, animated: true)
     }
-    
 }
 
 // MARK: - UITextFieldDelegate
@@ -134,7 +126,4 @@ extension AuthViewController: UITextFieldDelegate {
         passwordTextField.resignFirstResponder()
         return true
     }
-    
 }
-
-
