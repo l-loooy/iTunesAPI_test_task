@@ -6,8 +6,7 @@
 //
 
 
-//lolaevgasu@gmail.com
-//Lolaevgasu12345
+
 
 import UIKit
 
